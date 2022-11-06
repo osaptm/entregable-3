@@ -31,7 +31,7 @@ const Search = ({getLocation}) => {
     
     return (
         <div className='search'>
-              <input className='input-search' type="text" onChange={(e) =>{setStateSearch(false); setInputValue(e.target.value);}} value={InputValue}/>
+              <input placeholder='Type a Location Name...' className='input-search' type="text" onChange={(e) =>{setStateSearch(false); setInputValue(e.target.value);}} value={InputValue}/>
               <ResultSearch />
         </div>
     );
